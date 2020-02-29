@@ -70,10 +70,11 @@ Markdown兼容HTML，一种轻量级标记语言，也是一种书写格式，�
 |语法二|\[链接名称][网址别名]<br><br>[网址别名]:真是网址（建议此行写到文章末尾）  
 |语法三|\<真正的网址>|
 - eg:  
-    >[BurgessKzg](https://github.com/BurgessKzg/ "BurgessKzg的github网页")
-    ><https://github.com/BurgessKzg/>
+    >[BurgessKzg](https://github.com/BurgessKzg/ "BurgessKzg的github网页") <br>
+    ><https://github.com/BurgessKzg/> <br>
     >[Burgesskzg][^2]
-    >[^2]:https://github.com/BurgessKzg/
+    >[^2]:https://github.com/BurgessKzg/ <br>
+
 
 ## 1.11. 图片
 - "!"开始，然后"[图片替代文字]"最后“(图片网址 “标题”)”，标题可有可无（“\!\[图片替代文字](图片网址)”）；
