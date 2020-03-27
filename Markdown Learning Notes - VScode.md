@@ -139,3 +139,32 @@
 8. 可以在任何位置写入"[TOC]"来插入目录；
 9. 可以使用“@import "图片名"”来插入同目录下的图片，在typora中本地图片删除还可显示，但是vscode不显示，需要学习图床使用；
 
+# 疑问
+
+1. 遇到代码段多行和行数太长，想添加滚动条，尝试如下方法：
+>
+    <style type="text/css">
+    .scroll{  
+        width:          1000px;   /*宽度*/  
+        height:         500px;/*高度*/  
+        color:          ;/*颜色*/  
+        font-family:    黑体;/*字体*/  
+        padding-left:   10px;/*层内左边距*/  
+        padding-right:  10px;/*层内右边距*/  
+        padding-top:    10px;/*层内上边距*/  
+        padding-bottom: 10px;/*层内下边距*/  
+        overflow-y:     auto;/*竖向滚动条*/  
+        overflow-x:     auto;/*横向滚动条(scroll:始终出现;auto:必要时出现;*/      
+    }  
+    </style>
+    
+    <div class="scroll">  
+    ```C
+    //添加代码段
+    ```
+    </div>  
+    
+- 但是发现：
+    - 横向滚动条在内部，必须拉到最底部才能看到使用；
+    - 滚动条不能随窗口缩放调整；
+    - 好处是代码依旧可以高亮
